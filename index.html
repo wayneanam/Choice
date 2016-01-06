@@ -7,9 +7,25 @@
 	<body>
 		<div id="main-container">
 			<div v-for="content in contents">
-				<img v-bind:src="content.src" alt="{{ content.alt }}" > 
-				<p>{{ content.description }}</p>
+					<img v-bind:src="content.src" alt="{{ content.alt }}"> 
+					<textarea v-model="content.description" placeholder="Type Here...">{{ content.description }}</textarea>
+					<form>
+						<input type="file" value="browse"></input>
+						<br>
+						<button name="save-edit" v-on:click="editSave" v-show="content.description != 0 | file != 0">Save</button>
+					</form>
 			</div>
+		</div>
+		
+		<div id="side-container">
+			<p>Basic Layout</p>
+
+			<p>Last Saved: {{ }}</p>
+			<button>Create More</button>		
+			<br>
+			<br>
+			<button>Save All</button>			
+			<button>Delete All</button>			
 		</div>
 	
 		<script type="text/javascript" src="main.js"></script>

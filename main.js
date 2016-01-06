@@ -7,17 +7,53 @@ new Vue ({
 	
 	data: {
 		contents: [
-			{src: 'quest.jpg', alt: 'quest', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet iaculis eros, at vehicula felis. Aliquam consectetur scelerisque molestie. Praesent a rhoncus turpis, tempus consectetur augue. Etiam sit amet condimentum tellus, non commodo arcu. Etiam non ipsum rutrum, ultricies ex in, luctus orci. Aenean vitae cursus lorem, nec fermentum mauris. Curabitur vitae ex lacus.'},
-			{src: 'quest.jpg', alt: 'quest', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet iaculis eros, at vehicula felis. Aliquam consectetur scelerisque molestie. '},
-			{src: 'quest.jpg', alt: 'quest', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet iaculis eros, at vehicula felis. Aliquam consectetur scelerisque molestie. Praesent a rhoncus turpis, tempus consectetur augue. Etiam sit amet condimentum tellus, non commodo arcu. Etiam non ipsum rutrum, ultricies ex in, luctus orci. Aenean vitae cursus lorem, nec fermentum mauris. Curabitur vitae ex lacus. ' + br + ' Nam pellentesque gravida iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla sit amet cursus enim. Morbi sodales magna eu eros auctor, id lobortis neque facilisis. Sed molestie commodo justo, id lacinia massa. Quisque ut eros nulla. Aliquam auctor, erat sed gravida finibus, lectus leo mollis ex, a euismod ante lectus at metus. Morbi vulputate posuere malesuada. Proin luctus, orci vel sodales imperdiet, odio libero volutpat felis, eu facilisis est libero quis leo. Fusce viverra fermentum velit sed commodo. Donec dictum, ligula ut condimentum feugiat, leo turpis pellentesque orci, pharetra convallis lorem quam a libero. Integer lacinia, sem in aliquet sollicitudin, dui magna lobortis nisl, rutrum tristique lectus libero sit amet lorem.'},
-			{src: 'quest.jpg', alt: 'quest', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet iaculis eros, at vehicula felis. Aliquam consectetur scelerisque molestie. Praesent a rhoncus turpis, tempus consectetur augue. Etiam sit amet condimentum tellus, non commodo arcu. Etiam non ipsum rutrum, ultricies ex in, luctus orci. Aenean vitae cursus lorem, nec fermentum mauris. Curabitur vitae ex lacus.'},
-			{src: 'quest.jpg', alt: 'quest', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet iaculis eros, at vehicula felis. Aliquam consectetur scelerisque molestie. Praesent a rhoncus turpis, tempus consectetur augue. Etiam sit amet condimentum tellus, non commodo arcu. Etiam non ipsum rutrum, ultricies ex in, luctus orci.'},
-			{src: 'quest.jpg', alt: 'quest', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet iaculis eros, at vehicula felis. Aliquam consectetur scelerisque molestie. Praesent a rhoncus turpis, tempus consectetur augue. Etiam sit amet condimentum tellus, non commodo arcu. Etiam non ipsum rutrum, ultricies ex in, luctus orci. Aenean vitae cursus lorem, nec fermentum mauris. Curabitur vitae ex lacus.'},
-			{src: 'quest.jpg', alt: 'quest', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet iaculis eros, at vehicula felis. Aliquam consectetur scelerisque molestie. '},
-			{src: 'quest.jpg', alt: 'quest', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet iaculis eros, at vehicula felis. Aliquam consectetur scelerisque molestie. Praesent a rhoncus turpis, tempus consectetur augue. Etiam sit amet condimentum tellus, non commodo arcu. Etiam non ipsum rutrum, ultricies ex in, luctus orci. Aenean vitae cursus lorem, nec fermentum mauris. Curabitur vitae ex lacus. ' + br + ' Nam pellentesque gravida iaculis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla sit amet cursus enim. Morbi sodales magna eu eros auctor, id lobortis neque facilisis. Sed molestie commodo justo, id lacinia massa. Quisque ut eros nulla. Aliquam auctor, erat sed gravida finibus, lectus leo mollis ex, a euismod ante lectus at metus. Morbi vulputate posuere malesuada. Proin luctus, orci vel sodales imperdiet, odio libero volutpat felis, eu facilisis est libero quis leo. Fusce viverra fermentum velit sed commodo. Donec dictum, ligula ut condimentum feugiat, leo turpis pellentesque orci, pharetra convallis lorem quam a libero. Integer lacinia, sem in aliquet sollicitudin, dui magna lobortis nisl, rutrum tristique lectus libero sit amet lorem.'},
-			{src: 'quest.jpg', alt: 'quest', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet iaculis eros, at vehicula felis. Aliquam consectetur scelerisque molestie. Praesent a rhoncus turpis, tempus consectetur augue. Etiam sit amet condimentum tellus, non commodo arcu. Etiam non ipsum rutrum, ultricies ex in, luctus orci. Aenean vitae cursus lorem, nec fermentum mauris. Curabitur vitae ex lacus.'},
-			{src: 'quest.jpg', alt: 'quest', description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus aliquet iaculis eros, at vehicula felis. Aliquam consectetur scelerisque molestie. Praesent a rhoncus turpis, tempus consectetur augue. Etiam sit amet condimentum tellus, non commodo arcu. Etiam non ipsum rutrum, ultricies ex in, luctus orci.'},
-		]
+			{src: 'quest.jpg', alt: 'quest', description: ''},
+			{src: 'quest.jpg', alt: 'quest', description: ''},
+			{src: 'quest.jpg', alt: 'quest', description: ''},
+			{src: 'quest.jpg', alt: 'quest', description: ''},
+			{src: 'quest.jpg', alt: 'quest', description: ''},
+			{src: 'quest.jpg', alt: 'quest', description: ''},
+			{src: 'quest.jpg', alt: 'quest', description: ''},
+			{src: 'quest.jpg', alt: 'quest', description: ''},
+			{src: 'quest.jpg', alt: 'quest', description: ''},
+			{src: 'quest.jpg', alt: 'quest', description: ''},
+		],
+	},
+	methods: {
+		editSave: function () {
+			
+		}
 	}
 })
+
+new Vue ({
+	el: '#main-input',
+	
+	data:
+		{description:  description }
+})
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
 		

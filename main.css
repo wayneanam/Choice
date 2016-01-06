@@ -1,19 +1,36 @@
 #main-container {
-	width: 1010px;
+	float: left;
+	width: 1110px;
 }
 
-#main-container div {
+#main-container  div{
 	float: left;
 }
 
-#main-container img {
-	width: 200px;
+#main-container  div form {
+	clear: both;
+	float: left;
+	width: 220px;
+	height: 50px;
 	border: 1px solid black;
 }
 
-#main-container p {
-	width: 200px;
-	height: 500px;
+#main-container img {
+	width: 220px;
 	border: 1px solid black;
-	overflow: scroll;
+	display: table-header-group;
+}
+
+#main-container textarea {
+	float: left;
+	width: 220px;
+	height: 300px;
+	overflow-y: scroll;
+	border: 1px solid black;
+}
+
+#side-container {
+	float: left;
+	width: 190px;
+	border: 1px solid black;
 }
