@@ -1,0 +1,19 @@
+#main-container {
+	width: 1010px;
+}
+
+#main-container div {
+	float: left;
+}
+
+#main-container img {
+	width: 200px;
+	border: 1px solid black;
+}
+
+#main-container p {
+	width: 200px;
+	height: 500px;
+	border: 1px solid black;
+	overflow: scroll;
+}
