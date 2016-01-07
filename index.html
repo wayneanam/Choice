@@ -6,25 +6,28 @@
 	
 	<body>
 		<div id="main-container">
+		<div>
 			<div v-for="content in contents">
+					<button id="inner-delete"v-on:click="deleteSingle($index)">X</button>
 					<img v-bind:src="content.src" alt="{{ content.alt }}"> 
-					<textarea v-model="content.description" placeholder="Type Here...">{{ content.description }}</textarea>
+					<br>
+					<textarea id="saved" v-model="content.description" placeholder="Type Here...">{{ content.description }}</textarea>
 					<form>
 						<input type="file" value="browse"></input>
 						<br>
-						<button name="save-edit" v-on:click="editSave" v-show="content.description != 0 | file != 0">Save</button>
+						<button name="save-edit" v-show="content.description != 0 | file != 0">Save</button>
 					</form>
+			</div>
+			<button v-on:click="createChoice()">Create More</button>	
 			</div>
 		</div>
 		
 		<div id="side-container">
 			<p>Basic Layout</p>
+			
+			<p>Last Saved: <span>{{ showTime()[1] }}</span></p>
 
-			<p>Last Saved: {{ }}</p>
-			<button>Create More</button>		
-			<br>
-			<br>
-			<button>Save All</button>			
+			<button v-on:click="save(saved)"><span v-on:click="showTime()">Save All</span></button>			
 			<button>Delete All</button>			
 		</div>
 	

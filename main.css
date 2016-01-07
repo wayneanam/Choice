@@ -17,6 +17,7 @@
 
 #main-container img {
 	width: 220px;
+	height: 220px;
 	border: 1px solid black;
 	display: table-header-group;
 }
@@ -33,4 +34,8 @@
 	float: left;
 	width: 190px;
 	border: 1px solid black;
+}
+
+#inner-delete {
+	position: absolute;
 }
