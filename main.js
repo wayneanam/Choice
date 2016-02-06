@@ -1,8 +1,7 @@
-//Figure out how paragraphs work in Vue work later.
-var br = document.createElement("br");
-var counter = 0;
+console.log(localStorage.getItem("saveData"));
+var num = 0;
 
-new Vue ({
+var main = new Vue ({
 	el:'#main-container',
 	
 	data: {
@@ -11,45 +10,78 @@ new Vue ({
 		],
 	},
 	methods: {
-		createChoice: function() {
-			this.contents.push({src: '', alt: '', description: ''});
-		},
 		deleteSingle: function(index) {
 			this.contents.splice(index, 1);
-		}
-	}
+		},
+	},
+  ready: function() {
+    if(localStorage.getItem("saveData")) {
+      this.contents = JSON.parse(localStorage.getItem("saveData"))
+    }
+  }
 })
 
-new Vue ({
+var side = new Vue ({
 	el: '#side-container',
 	
 	data: {
-		time: ''
+		lastSaved: ''
 	},
 	methods: {
-		showTime: function() {
-			if(counter < 0)
-			{
-				var today = new Date();
-				
-				var h = today.getHours();
-				var m = today.getMinutes();
-				var s = today.getSeconds();
-				
-				var time = h + ':' + m + ':' + s;
-			}
-			counter++;
-			console.log(counter);
-			return [counter, time];
+    createChoice: function() {
+			main.contents.push({src: '', alt: '', description: ''});
 		},
-		save: function(id) {
+		showTime: function() {
+			var today = new Date();
+			
+			var h = today.getHours();
+			var m = today.getMinutes();
+			var s = today.getSeconds();
+			
+			var time = h + ':' + m + ':' + s;
 
+			this.lastSaved = time;
+		},
+		canSave: function () {
+			var returnVal = false;
+			
+			main.contents.forEach(function(val) {
+				if(val.description != '' || val.src != '')
+				{
+					returnVal = true;
+				}
+			});
+			return returnVal;
+		},
+		saveAll: function() {
+			if(this.canSave() == true)
+			{
+				if(typeof(Storage) !== "undefined") {
+          localStorage.setItem("saveData", JSON.stringify(main.contents));
+      
+				}
+				else {
+					console.log("Local storage not allowed");
+				}
+			}
+			num = 0;
+		},
+		deleteAll: function() {
+			var validate = confirm("Are you sure you want to delete all tentative name");
+			
+			if(validate == true)
+			{
+				localStorage.clear();
+				main.contents.splice(0, main.contents.length);
+				this.createChoice();
+				this.lastSaved = '';
+			}
 		}
 	}
 })
 	
 	
-	
+
 	
 	
 	

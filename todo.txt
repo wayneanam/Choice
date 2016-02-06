@@ -1,20 +1,31 @@
-This section will essentially be a much smaller version of the left table
-
-It will contain some sort of marker to show that the images were loaded correctly
-
-There will also be a text marker perhaps some cursive writing thats extremely small
-Not sure on whether i want this div to be static. might be a hassle to code
-
 To Do
-
-Create a layout to show what the content of each box has
-Remove the smaller buttons and replace them with the save all button on the right
-Hook up the last saved button to a javascript timer
-Create a delete all, make sure it has a notification when you actually decide to delete
-Hook things up to save locally
-Probably have an error message on refresh if the person has not saved
 
 Completed
 In the far right toolbar will be where boxes are created. When a button is clicked a single box is created
 When each box is created it will have a close button at the top right that will delete
 Not sure if i want to put a notification on there or not. It's not a difficult thing to do though but is it stylistically the right thing to have (I dont)
+Hook up the last saved button to a javascript timer
+Remove the smaller buttons and replace them with the save all button on the right
+You probably want to remove the choose file input. Having direct links would probably be easier.
+Create a delete all, make sure it has a notification when you actually decide to delete
+Hook things up to save locally
+
+
+Not Useful
+Create a layout/minimap to show what the content of each box has
+Probably have an error message on refresh if the person has not saved
+
+
+
+
+For Firebase:
+{
+	name: "",
+  author: "",
+  date: "",
+  published: 0,
+  contents: [
+  	{},
+    {}
+  ]
+}

@@ -2,33 +2,32 @@
 	<head>
 		<script type="text/javascript" src="vue.js"></script>
 		<link rel="stylesheet" type="text/css" href ="main.css">
+		<meta charset="UTF-8">
 	</head>
 	
 	<body>
 		<div id="main-container">
 		<div>
 			<div v-for="content in contents">
-					<button id="inner-delete"v-on:click="deleteSingle($index)">X</button>
+					<button type="button" id="inner-delete" v-on:click="deleteSingle($index)">X</button>
 					<img v-bind:src="content.src" alt="{{ content.alt }}"> 
 					<br>
 					<textarea id="saved" v-model="content.description" placeholder="Type Here...">{{ content.description }}</textarea>
 					<form>
-						<input type="file" value="browse"></input>
-						<br>
-						<button name="save-edit" v-show="content.description != 0 | file != 0">Save</button>
+						<input v-model="content.src" type="text" placeholder="Paste Image URL"></input>
 					</form>
 			</div>
-			<button v-on:click="createChoice()">Create More</button>	
 			</div>
 		</div>
 		
 		<div id="side-container">
-			<p>Basic Layout</p>
+			<p>Create a Tentative Name</p>
 			
-			<p>Last Saved: <span>{{ showTime()[1] }}</span></p>
+			<p>Last Saved: <span>{{ lastSaved }}</span></p>
 
-			<button v-on:click="save(saved)"><span v-on:click="showTime()">Save All</span></button>			
-			<button>Delete All</button>			
+      <button type="button" v-on:click="createChoice()">Create More</button>	
+			<button type="button" v-show="canSave()" v-on:click="saveAll()"><span v-on:click="showTime()">Save All</span></button>			
+			<button type="button" v-on:click="deleteAll()" >Delete All</button>			
 		</div>
 	
 		<script type="text/javascript" src="main.js"></script>
