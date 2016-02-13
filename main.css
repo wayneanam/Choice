@@ -1,11 +1,14 @@
 body {
-  background-color: #f7f7f7;
+  background-color: #7AB6FF;
+}
+
+p {
+  font-family: 'Times';
 }
 
 button {
-  color: black;
-  background: #7aB6FF;
-  border-color: #7aB6FF;
+  background: #6da3e5;
+  border-color: #6da3e5;
 }
 
 #main-container {
@@ -28,16 +31,18 @@ button {
 	clear: both;
 	float: left;
 	width: 220px;
-	border: 1px solid #7AB6FF;
+	border: 1px solid #2e8cff;
 }
 #main-container div form input {
   width: 220px;
+  font-family: 'Bitter', 'Times';
 }
 
 #main-container img {
 	width: 220px;
 	height: 220px;
-	border: 1px solid #7AB6FF;
+  background: #e4f0ff;
+	border: 1px solid #2e8cff;
 	display: table-header-group;
 }
 
@@ -45,16 +50,20 @@ button {
 	float: left;
 	width: 222px;
 	height: 300px;
+  color: black;
+  font-weight: 500;
+  font-family: 'Bitter', 'Times';
 	overflow-y: scroll;
-	border: 1px solid #7AB6FF;
-  background: #f5f5f5;
+  background: #e4f0ff;
+  border: 1px solid #2e8cff;
 }
 
 #side-container {
 	float: left;
 	width: 190px;
   margin-top: 20px;
-	border: 1px solid #7AB6FF;
+  background: #7AB6F0;
+	border: 1px solid #2e8cff;
 }
 
 #inner-delete {

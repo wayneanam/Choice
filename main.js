@@ -1,6 +1,3 @@
-console.log(localStorage.getItem("saveData"));
-var num = 0;
-
 var main = new Vue ({
 	el:'#main-container',
 	
@@ -64,7 +61,6 @@ var side = new Vue ({
 					console.log("Local storage not allowed");
 				}
 			}
-			num = 0;
 		},
 		deleteAll: function() {
 			var validate = confirm("Are you sure you want to delete all tentative name");
@@ -79,28 +75,3 @@ var side = new Vue ({
 		}
 	}
 })
-	
-	
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-		
