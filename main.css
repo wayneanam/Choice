@@ -7,8 +7,12 @@ p {
 }
 
 button {
-  background: #6da3e5;
+  background: #6191cc ;
   border-color: #6da3e5;
+}
+
+button:hover {
+  color: #a1cbff;
 }
 
 #main-container {

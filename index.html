@@ -1,5 +1,6 @@
 <html>
 	<head>
+    <title>ChoiceBox</title>
 		<script type="text/javascript" src="vue.js"></script>
 		<link rel="stylesheet" type="text/css" href ="main.css">
     <link href='https://fonts.googleapis.com/css?family=Bitter' rel='stylesheet' type='text/css'>
@@ -25,7 +26,7 @@
 		</div>
 		
 		<div id="side-container">
-			<p>Create a Tentative Name</p>
+			<p>Create a Choice</p>
 			
 			<p>Last Saved: <span>{{ lastSaved }}</span></p>
 
@@ -33,9 +34,9 @@
 			<button type="button" v-show="canSave()" v-on:click="saveAll()"><span v-on:click="showTime()">Save All</span></button>			
 			<button type="button" v-on:click="deleteAll()" >Delete All</button>			
       
-      <p>Tentative Name:</p>
-      <p>Tentative Name is a template site that enables you to easily make your own choice. A choice is a slightly longer variation of the game Would You Rather.</p>
-      <p>A typical choice usually has a scenario and an image that is closely related to the scenario. Tentative name's can have any genre and topic. From <a href="1386557427581.jpg">fantasy</a> to the <a href="1382666624041.png">mundane</a>.</p>
+      <p>ChoiceBox:</p>
+      <p>ChoiceBox is a template site that enables you to easily make your own choice. A choice is a slightly longer variation of the game Would You Rather.</p>
+      <p>A typical choice usually has a scenario and an image that is closely related to the scenario. ChoiceBoxes can have any genre and topic. From <a href="1386557427581.jpg">fantasy</a> to the <a href="1382666624041.png">mundane</a>.</p>
 		</div>
 	
 		<script type="text/javascript" src="main.js"></script>

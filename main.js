@@ -63,7 +63,7 @@ var side = new Vue ({
 			}
 		},
 		deleteAll: function() {
-			var validate = confirm("Are you sure you want to delete all tentative name");
+			var validate = confirm("Are you sure you want to delete all ChoiceBoxes?");
 			
 			if(validate == true)
 			{
